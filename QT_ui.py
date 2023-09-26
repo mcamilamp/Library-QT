@@ -18,51 +18,49 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
     QMainWindow, QPushButton, QSizePolicy, QStatusBar,
     QTextEdit, QWidget)
-import sqlite3
 import sys
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-
-        self.conection = sqlite3.connect("BaseDeDatos.db")
-
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(729, 485)
+        MainWindow.resize(729, 500)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.frame_principal = QFrame(self.centralwidget)
         self.frame_principal.setObjectName(u"frame_principal")
-        self.frame_principal.setGeometry(QRect(10, 10, 231, 451))
+        self.frame_principal.setGeometry(QRect(10, 60, 231, 451))
         self.frame_principal.setMinimumSize(QSize(100, 0))
         self.frame_principal.setMaximumSize(QSize(500, 16777215))
         self.frame_principal.setStyleSheet(u"background-color: rgb(205, 217, 255);\n"
-"border-radius:8px;\n"
+"border-radius:10px;\n"
 "")
         self.frame_principal.setFrameShape(QFrame.StyledPanel)
         self.frame_principal.setFrameShadow(QFrame.Raised)
         self.title = QLabel(self.frame_principal)
         self.title.setObjectName(u"title")
-        self.title.setGeometry(QRect(20, 30, 181, 20))
+        self.title.setGeometry(QRect(20, 20, 181, 20))
         self.title.setStyleSheet(u"font: 900 18pt \"Segoe UI\";\n"
 "color: rgb(117, 135, 0);\n"
-"")
+"border-radius:10px;")
         self.textEdit = QTextEdit(self.frame_principal)
         self.textEdit.setObjectName(u"textEdit")
-        self.textEdit.setGeometry(QRect(10, 350, 201, 81))
+        self.textEdit.setGeometry(QRect(10, 330, 201, 81))
+        self.textEdit.setStyleSheet(u"font: 12pt \"Segoe UI\";")
         self.textEdit.setFrameShadow(QFrame.Sunken)
         self.label_4 = QLabel(self.frame_principal)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(-30, 20, 591, 371))
+        self.label_4.setGeometry(QRect(-30, 0, 591, 371))
+        self.label_4.setStyleSheet(u"border-radius:10px;")
         self.label_4.setPixmap(QPixmap(u"img/tree3.png"))
         self.label_4.raise_()
         self.title.raise_()
         self.textEdit.raise_()
         self.frame_2 = QFrame(self.centralwidget)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(250, 10, 471, 451))
+        self.frame_2.setGeometry(QRect(250, 60, 471, 421))
         self.frame_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"border-radius:8px;")
+"border-radius:10px;")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.frame_option1 = QFrame(self.frame_2)
@@ -70,7 +68,7 @@ class Ui_MainWindow(object):
         self.frame_option1.setGeometry(QRect(30, 40, 201, 121))
         self.frame_option1.setAutoFillBackground(False)
         self.frame_option1.setStyleSheet(u"background-color: rgb(156, 220, 137);\n"
-"border-radius:8px;")
+"border-radius:10px;")
         self.frame_option1.setFrameShape(QFrame.NoFrame)
         self.frame_option1.setFrameShadow(QFrame.Plain)
         self.frame_option1.setLineWidth(-1)
@@ -127,6 +125,22 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setObjectName(u"lineEdit_3")
         self.lineEdit_3.setGeometry(QRect(50, 50, 113, 22))
         self.lineEdit_3.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame_close = QFrame(self.centralwidget)
+        self.frame_close.setObjectName(u"frame_close")
+        self.frame_close.setGeometry(QRect(10, 9, 711, 41))
+        self.frame_close.setStyleSheet(u"background-color: rgb(205, 217, 255);\n"
+"border-radius:10px;")
+        self.frame_close.setFrameShape(QFrame.StyledPanel)
+        self.frame_close.setFrameShadow(QFrame.Raised)
+        self.button_close = QPushButton(self.frame_close)
+        self.button_close.setObjectName(u"button_close")
+        self.button_close.setGeometry(QRect(660, 10, 41, 21))
+        self.button_close.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"")
+        icon = QIcon()
+        icon.addFile(u"img/close.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.button_close.setIcon(icon)
+        self.button_close.setIconSize(QSize(25, 25))
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -149,17 +163,28 @@ class Ui_MainWindow(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Have you been <span style=\" font-weight:700;\">Under </span>a<span style=\" font-weight:700;\"> Tree</span> on a </p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">sunny day?</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-bloc"
-                        "k-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">This is what it feels like to read a good book</span></p></body></html>", None))
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Have you been </span><span style=\" font-size:9pt; font-weight:700;\">Under </span><span style=\" font-size:9pt;\">a</span><span style=\" font-size:9pt; font-weight:700;\"> Tree</span><span style=\" font-size:9pt;\"> on a </span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:"
+                        "0; text-indent:0px;\"><span style=\" font-size:9pt;\">sunny day?</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; font-weight:700;\">This is what it feels like to read a good book</span></p></body></html>", None))
         self.label_4.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"Enter the name of the book:", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.lineEdit_1.setText(QCoreApplication.translate("MainWindow", u"...", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Show books by Author:", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.lineEdit_2.setText(QCoreApplication.translate("MainWindow", u"...", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Show books by genre:", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.lineEdit_3.setText(QCoreApplication.translate("MainWindow", u"...", None))
+        self.button_close.setText("")
     # retranslateUi
 
+if __name__ == "__main__":
+    app = QApplication([])
+    MainWindow = QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
