@@ -17,6 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QListView, QSizePolicy,
     QWidget)
+from PySide6.QtCore import QStringListModel
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -30,7 +31,6 @@ class Ui_Form(object):
 
         self.horizontalLayout.addWidget(self.listView)
 
-
         self.retranslateUi(Form)
 
         QMetaObject.connectSlotsByName(Form)
@@ -38,5 +38,5 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-    # retranslateUi
 
+    

@@ -1,4 +1,6 @@
 import sqlite3
+from QT_ui import Ui_MainWindow, QMainWindow
+from second_ui import Ui_Form
+ 
 
-conn = sqlite3.connect("BaseDeDatos.db")
 

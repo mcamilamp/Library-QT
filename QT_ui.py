@@ -18,9 +18,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
     QMainWindow, QPushButton, QSizePolicy, QStatusBar,
     QTextEdit, QWidget)
+from second_ui import Ui_Form
+from module import filter_books_by_author
+import sys
 
 class Ui_MainWindow(object):
+    
     def setupUi(self, MainWindow):
+
+        
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(720, 538)
@@ -184,3 +190,4 @@ class Ui_MainWindow(object):
         self.button_close.setText("")
     # retranslateUi
 
+   
