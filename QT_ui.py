@@ -18,13 +18,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
     QMainWindow, QPushButton, QSizePolicy, QStatusBar,
     QTextEdit, QWidget)
-import sys
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(729, 500)
+        MainWindow.resize(720, 538)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.frame_principal = QFrame(self.centralwidget)
@@ -42,12 +41,16 @@ class Ui_MainWindow(object):
         self.title.setGeometry(QRect(20, 20, 181, 20))
         self.title.setStyleSheet(u"font: 900 18pt \"Segoe UI\";\n"
 "color: rgb(117, 135, 0);\n"
-"border-radius:10px;")
+"")
         self.textEdit = QTextEdit(self.frame_principal)
         self.textEdit.setObjectName(u"textEdit")
         self.textEdit.setGeometry(QRect(10, 330, 201, 81))
         self.textEdit.setStyleSheet(u"font: 12pt \"Segoe UI\";")
         self.textEdit.setFrameShadow(QFrame.Sunken)
+        self.textEdit.setReadOnly(True)
+        self.textEdit.setOverwriteMode(True)
+        self.textEdit.setAcceptRichText(True)
+        self.textEdit.setCursorWidth(2)
         self.label_4 = QLabel(self.frame_principal)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(-30, 0, 591, 371))
@@ -58,9 +61,9 @@ class Ui_MainWindow(object):
         self.textEdit.raise_()
         self.frame_2 = QFrame(self.centralwidget)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(250, 60, 471, 421))
+        self.frame_2.setGeometry(QRect(250, 60, 471, 451))
         self.frame_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"border-radius:10px;")
+"border-radius:8px;")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.frame_option1 = QFrame(self.frame_2)
@@ -68,7 +71,7 @@ class Ui_MainWindow(object):
         self.frame_option1.setGeometry(QRect(30, 40, 201, 121))
         self.frame_option1.setAutoFillBackground(False)
         self.frame_option1.setStyleSheet(u"background-color: rgb(156, 220, 137);\n"
-"border-radius:10px;")
+"border-radius:8px;")
         self.frame_option1.setFrameShape(QFrame.NoFrame)
         self.frame_option1.setFrameShadow(QFrame.Plain)
         self.frame_option1.setLineWidth(-1)
@@ -181,10 +184,3 @@ class Ui_MainWindow(object):
         self.button_close.setText("")
     # retranslateUi
 
-if __name__ == "__main__":
-    app = QApplication([])
-    MainWindow = QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
