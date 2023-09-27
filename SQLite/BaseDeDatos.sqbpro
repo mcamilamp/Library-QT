@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Maria Camila/Desktop/Python/Library QT/SQLite/BaseDeDatos.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="632"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,4:mainData"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Data" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="213"/><column index="2" value="121"/><column index="3" value="184"/><column index="4" value="178"/><column index="5" value="44"/><column index="6" value="46"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO Data(Name, ID, Author, Genre)
+VALUES
+    (&quot;To all the boys i loved Before&quot;, &quot;000&quot;, &quot;Jenny Han&quot;, &quot;Romantic&quot;),
+    (&quot;Me before You&quot;, &quot;001&quot;, &quot;Jojo Moyes&quot;, &quot;Romantic&quot;),
+    (&quot;The Selection&quot;, &quot;002&quot;, &quot;Kiera Cass&quot;, &quot;Romantic&quot;),
+    (&quot;Little House on the Prairie&quot;, &quot;003&quot;, &quot;Laura Ingalls Wilder&quot;, &quot;Autobiography&quot;),
+    (&quot;Ugly Love&quot;, &quot;004&quot;, &quot;Collen Hoover&quot;, &quot;Romantic&quot;),
+    (&quot;From Lukov, with Love&quot;, &quot;005&quot;, &quot;Mariana Zapata&quot;, &quot;Romantic&quot;),
+    (&quot;The summer i turned Pretty&quot;, &quot;006&quot;, &quot;Jenny Han&quot;, &quot;Romantic&quot;),
+    (&quot;Pride and Prejudice&quot;, &quot;007&quot;, &quot;Jane Austen&quot;, &quot;Romantic&quot;),
+    (&quot;The notebook&quot;, &quot;008&quot;, &quot;Nicholas Sparks&quot;, &quot;Romantic&quot;),
+    (&quot;It Ends with Us&quot;, &quot;009&quot;, &quot;Collen Hoover&quot;, &quot;Romantic&quot;),
+    (&quot;The Love Hypothesis&quot;, &quot;010&quot;, &quot;Ali Hazelwood&quot;, &quot;Romantic&quot;),
+    (&quot;The Diary of a Young Girl&quot;, &quot;011&quot;, &quot;Anne&quot;, &quot;Autobiography&quot;),
+    (&quot;Love on the Brain&quot;, &quot;012&quot;, &quot;Ali Hazelwood&quot;, &quot;Romantic&quot;),
+    (&quot;The One&quot;, &quot;013&quot;, &quot;Kiera Cass&quot;, &quot;Romantic&quot;),
+    (&quot;Obsidian&quot;, &quot;014&quot;, &quot;Jennifer L. Armentrout&quot;, &quot;Fiction&quot;),
+    (&quot;Onyx&quot;, &quot;015&quot;, &quot;Jennifer L. Armentrout&quot;, &quot;Fiction&quot;),
+    (&quot;Macondo&quot;, &quot;016&quot;, &quot;Gabriel Garcia Marquez&quot;, &quot;Magical realism&quot;),
+    (&quot;Dracula&quot;, &quot;017&quot;, &quot;Bram Stoker&quot;, &quot;Terror&quot;),
+    (&quot;Frankenstein&quot;, &quot;018&quot;, &quot;Mary Shelley&quot;, &quot;Terror&quot;),
+    (&quot;A walk to remember&quot;, &quot;019&quot;, &quot;Nicholas Sparks&quot;, &quot;Romantic&quot;);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

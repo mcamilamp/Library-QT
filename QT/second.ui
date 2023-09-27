@@ -120,7 +120,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>img/tree3.png</pixmap>
+      <pixmap>../img/tree3.png</pixmap>
      </property>
     </widget>
     <zorder>label_4</zorder>
@@ -406,7 +406,7 @@ border-radius:10px;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>img/close.svg</normaloff>img/close.svg</iconset>
+       <normaloff>../img/close.svg</normaloff>../img/close.svg</iconset>
      </property>
      <property name="iconSize">
       <size>

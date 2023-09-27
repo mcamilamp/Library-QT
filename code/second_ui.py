@@ -15,21 +15,21 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QListView, QSizePolicy,
+from PySide6.QtWidgets import (QApplication, QListView, QSizePolicy, QVBoxLayout,
     QWidget)
-from PySide6.QtCore import QStringListModel
 
 class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(722, 538)
-        self.horizontalLayout = QHBoxLayout(Form)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        Form.resize(722, 591)
+        self.verticalLayout = QVBoxLayout(Form)
+        self.verticalLayout.setObjectName(u"verticalLayout")
         self.listView = QListView(Form)
         self.listView.setObjectName(u"listView")
 
-        self.horizontalLayout.addWidget(self.listView)
+        self.verticalLayout.addWidget(self.listView)
+
 
         self.retranslateUi(Form)
 
@@ -38,5 +38,5 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+    # retranslateUi
 
-    

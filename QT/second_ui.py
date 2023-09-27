@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'QT.ui'
+## Form generated from reading UI file 'second.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -55,7 +55,7 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(-30, 0, 591, 371))
         self.label_4.setStyleSheet(u"border-radius:10px;")
-        self.label_4.setPixmap(QPixmap(u"img/tree3.png"))
+        self.label_4.setPixmap(QPixmap(u"../img/tree3.png"))
         self.label_4.raise_()
         self.title.raise_()
         self.textEdit.raise_()
@@ -143,7 +143,7 @@ class Ui_MainWindow(object):
         self.button_close.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "")
         icon = QIcon()
-        icon.addFile(u"img/close.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../img/close.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.button_close.setIcon(icon)
         self.button_close.setIconSize(QSize(25, 25))
         MainWindow.setCentralWidget(self.centralwidget)
